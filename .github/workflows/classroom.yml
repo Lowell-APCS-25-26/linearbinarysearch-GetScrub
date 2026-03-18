@@ -37,7 +37,7 @@ jobs:
       with:
         test-name: binarySearch
         setup-command: ''
-        command: gradle test --tests "*binarysearch*"
+        command: gradle test --tests "*binarySearch*"
         timeout: 10
         max-score: 1
     - name: recursiveBinary
@@ -46,7 +46,7 @@ jobs:
       with:
         test-name: recursiveBinary
         setup-command: ''
-        command: gradle test --tests "*recursivebinary*"
+        command: gradle test --tests "*recursiveBinary*"
         timeout: 10
         max-score: 1
     - name: Autograding Reporter
