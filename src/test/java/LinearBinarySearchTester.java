@@ -9,7 +9,7 @@ import org.junit.jupiter.params.provider.CsvSource;
 
 import java.io.*;
 
-public class PalindromeTester {
+public class LinearBinarySearchTester {
 
    @Test
    public void linear1 () {
