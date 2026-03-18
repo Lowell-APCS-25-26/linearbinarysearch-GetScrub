@@ -40,8 +40,8 @@ public class Sketch {
   if(catNumToFind == store[startIndex].getCatNum()){
     return store[startIndex].getInventory();
   }else{
-    if(recursiveLinearSearch(a,catNumToFind,startIndex+1)!=(-1)){
-      return recursiveLinearSearch(a,catNumToFind,startIndex+1);
+    if(recursiveLinearSearch(catNumToFind,startIndex+1)!=(-1)){
+      return recursiveLinearSearch(catNumToFind,startIndex+1);
     }else{
       return -1;
     }
@@ -73,9 +73,9 @@ public class Sketch {
       return store[guess].getInventory();
     }
     if(store[guess].getCatNum()>target){
-      return recursiveBinarySearch(a,target,low,guess-1);
+      return recursiveBinarySearch(target,low,guess-1);
     }else{
-      return recursiveBinarySearch(a,target,guess+1,high);
+      return recursiveBinarySearch(target,guess+1,high);
     }
   }
   return -1;
